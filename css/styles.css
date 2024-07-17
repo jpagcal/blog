@@ -17,6 +17,7 @@ html, body {
     left: 164px;
     top: 450px;
     margin: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -33,7 +34,7 @@ h2 {
 
 @media (min-aspect-ratio:16/9) {
     video {
-        width:100vw;
+        width:100%;
         height:auto;
     }
 }
