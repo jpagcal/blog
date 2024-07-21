@@ -1,6 +1,6 @@
-html, body {
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 #titlecard {
@@ -31,16 +31,18 @@ h2 {
     padding: 0;
 }
 
-@media (min-aspect-ratio:16/9) {
-    video {
-        width:100vw;
-        height:auto;
-    }
+#video-container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-@media (max-aspect-ratio:16/9) {
-    video {
-        height:100vh;
-        width:auto;
-    }
+
+#video-container #background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
