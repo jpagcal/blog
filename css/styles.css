@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#titlecard {
+#landingpage {
     font-family: 'Roboto';
     font-weight: bold;
     color: white;
@@ -16,24 +16,49 @@
     position: absolute;
     left: 164px;
     top: 450px;
-    margin: 0;
 }
 
-h1 {
+.taskbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    width: 100%;
+    height: 5%;
+}
+
+#tbleft {
+    width: 40%;
+}
+
+#tbright {
+    width: 40%;
+}
+
+#tbmiddle {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.taskbarheader {
+    font-family: 'Roboto Mono';
+    font-size: 1.4rem;
+    font-weight:bold;
+    color: black;
+}
+
+.bgheader {
     font-size: 80px;
-    margin: 0;
-    padding: 0;
 }
 
-h2 {
+.bgheader2 {
     font-size: 32px;
-    margin: 0;
-    padding: 0;
 }
 
 #video-container {
-    margin: 0;
-    padding: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -45,4 +70,28 @@ h2 {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+
+@media (max-width: 1980px) {
+    #title {
+        left: 164px;
+        top: 450px;
+    }
+}
+
+@media (max-width: 800px) {
+    #title {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bgheader {
+        font-size: 60px
+    }
+
+    .bgheader2 {
+        font-size: 25px
+    }
 }
